@@ -12,7 +12,8 @@ body {
      "image1 image1 image1"; */
      height: max-content;
      width: max-content;
-     grid-template-columns: repeat(3, 200px);
+     grid-template-columns: repeat(3, 300px);
+     grid-template-rows: repeat(6, auto);
      padding: 30px;
      
   
@@ -26,7 +27,7 @@ body {
     height: auto;
     width: 100%;
     border: solid beige;
-   
+    
     
    
 
@@ -35,16 +36,19 @@ body {
 @media screen and (max-width: 500px) {
 .grid {
     display: grid;
-   grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
+    
    justify-items: center;
 }
 
-.image1{
+.image1
+
+{
     height: 200px;
     width: 200px;
-    border: solid black;
+    border: solid beige;
+}
 }
 
 
-}
     
