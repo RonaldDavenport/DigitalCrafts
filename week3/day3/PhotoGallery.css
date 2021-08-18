@@ -1,0 +1,29 @@
+.grid{
+    display: grid;
+    grid-template-columns: 200px 200px 200px ;
+    justify-content: center;
+    align-content: center;
+}
+
+.image1{
+    height: 200px;
+    width: 200px;
+    border: solid black;
+
+}
+
+@media screen and (max-width: 500px) {
+.grid {
+    display: grid;
+   grid-template-columns: 1fr;
+   justify-items: center;
+}
+
+.image1{
+    
+    border: solid black;
+}
+
+
+}
+    
