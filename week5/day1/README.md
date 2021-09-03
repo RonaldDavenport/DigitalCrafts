@@ -18,3 +18,8 @@ This is my first functional website. I decided to create a NBA site that will di
 
 # About Page
 <img width="1381" alt="Screen Shot 2021-09-03 at 12 50 15 PM" src="https://user-images.githubusercontent.com/84947708/132047077-c314f9c1-7a7c-4e61-baea-8e4d10ecd409.png">
+
+# How to use the site?
+ - When navigating through the website. When you reach the Players page you will be greeted with a search bar. It will prompt you to enter an NBA players name. Upon entry, a stat card will show up below the search bar. This will contain your players name, height, position, team, and season statistics. Along with all this information a highlight video will appear as well.
+ - When you reach the Standings page you will be greeted with to tables that display the standings of the NBA Currently in that season. This includes games won, games loss, games back, and last 10 played
+ - When you reach the About page you will be greeted with a paragraph explaining our company and it's goals along with social media/contact information.
