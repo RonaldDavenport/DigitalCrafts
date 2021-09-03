@@ -4,6 +4,8 @@ This is my first functional website. I decided to create a NBA site that will di
 
 # Landing Page
 <img width="1440" alt="Screen Shot 2021-09-03 at 12 40 15 PM" src="https://user-images.githubusercontent.com/84947708/132045999-461bdd40-9ff6-447a-be53-7d0f5dd39525.png">
+
+
 # NBA Player Statistics Page
 <img width="1397" alt="Screen Shot 2021-09-03 at 12 41 46 PM" src="https://user-images.githubusercontent.com/84947708/132046147-8aabcf49-3248-4125-9142-3d4a5faeab93.png">
 
@@ -12,5 +14,7 @@ This is my first functional website. I decided to create a NBA site that will di
 
 # NBA Team Standings
 <img width="1385" alt="Screen Shot 2021-09-03 at 12 49 31 PM" src="https://user-images.githubusercontent.com/84947708/132046993-34a22c89-113a-4c9b-b0a8-113cdb5727ee.png">
+
+
 # About Page
 <img width="1381" alt="Screen Shot 2021-09-03 at 12 50 15 PM" src="https://user-images.githubusercontent.com/84947708/132047077-c314f9c1-7a7c-4e61-baea-8e4d10ecd409.png">
