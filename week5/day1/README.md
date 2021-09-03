@@ -6,3 +6,6 @@ This is my first functional website. I decided to create a NBA site that will di
 
 <img width="1397" alt="Screen Shot 2021-09-03 at 12 41 46 PM" src="https://user-images.githubusercontent.com/84947708/132046147-8aabcf49-3248-4125-9142-3d4a5faeab93.png">
 
+<img width="1424" alt="Screen Shot 2021-09-03 at 12 44 24 PM" src="https://user-images.githubusercontent.com/84947708/132046498-28991dc7-ed82-4c26-bf99-6431504acdc1.png">
+
+
