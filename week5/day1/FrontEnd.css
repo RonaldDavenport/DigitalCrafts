@@ -143,6 +143,13 @@ h4{
     color: orange;
 }
 
+#mlbNav a:hover{
+color: orange;
+}
+#NBANav a:hover{
+    color: orange;
+}
+
 .seasonRecap{
     /* background-color: aliceblue; */
     font-family: 'Oswald', sans-serif; 
