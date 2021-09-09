@@ -1,0 +1,13 @@
+.stockData{
+    display: flex;
+    
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: medium;
+    
+}
+body{
+    background-color: burlywood;
+    color: darkgreen;
+}
