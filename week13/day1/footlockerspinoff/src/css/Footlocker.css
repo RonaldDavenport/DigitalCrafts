@@ -1,0 +1,105 @@
+body{
+    margin: 0%;
+}
+.navigationBar{
+    display: flex;
+    flex-direction: row;
+    height: 75px;
+    width: 100%;
+ background-color: black;
+ align-items: center;
+ justify-content: space-between;
+  
+}
+
+
+.navbarLogo{
+    width: 85px;
+    height: 55px;
+    margin-left: 10px;
+
+}
+.navbarIcons{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+ gap: 20px;
+    align-items: center;
+    margin: 20px;
+}
+.navbarIcon{
+    color: white;
+    /* width: 5px;
+    height: 5px; */
+}
+.flxImage{
+    width: 100%;
+    height: 200px;
+}
+.saleImage{
+   margin-top: 20px;
+    width: 100%;
+    height: 200px;
+
+}
+.flxImageTextDiv{
+ position: absolute;
+ top: 100px;
+ height: 100px;
+margin-left: 10px;  
+}
+.saleImageTextDiv{
+    position: absolute;
+    top: 300px;
+    height: 100px;
+    margin-left: 10px;
+}
+li{
+    list-style-type: none;
+}
+.newArrivals{
+    text-align: center;
+}
+.newArrivalsDiv{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    /* flex-direction: row; */
+
+}
+.homePageShoeImages{
+    height: 100px;
+    width: 150px;
+}
+.productMainContainer{
+    align-items: center;
+    text-align: center;
+}
+.productContainer{
+    display: grid;
+    width: 100%;
+    height: 200px;
+    grid-template-columns: repeat(3, 300px);
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+    gap: 20px;
+    
+    
+}
+.productShoeDivs{
+ display: flex;
+flex-direction: column;
+border: 1px solid black;
+width: 225px;
+font-size: 10px;
+justify-content: center;
+align-items: center;
+
+
+}
+.productPageImages{
+    width: 200px;
+    height: 150px;
+}
