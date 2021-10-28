@@ -34,13 +34,22 @@ body{
 }
 .flxImage{
     width: 100%;
-    height: 200px;
+    height: 250px;
 }
+.flxImage2{
+    display: none;
+   
+}
+
 .saleImage{
    margin-top: 20px;
     width: 100%;
-    height: 200px;
+    height: 300px;
 
+}
+.saleImage2{
+    display: none;
+    
 }
 .flxImageTextDiv{
  position: absolute;
@@ -48,11 +57,17 @@ body{
  height: 100px;
 margin-left: 10px;  
 }
+.second-Section{
+   display: flex;
+   justify-content: end;
+}
 .saleImageTextDiv{
     position: absolute;
-    top: 300px;
-    height: 100px;
-    margin-left: 10px;
+ top: 300px;
+ height: 100px;
+ text-align: left;
+/* margin-left: 600px;   */
+    /* margin-right: ; */
 }
 li{
     list-style-type: none;
@@ -103,3 +118,78 @@ align-items: center;
     width: 200px;
     height: 150px;
 }
+@media only screen and (max-width: 650px){
+    body{
+margin: 0%;
+    }
+    .navigationBar{
+        width: 100%;
+
+    }
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .flxImage{
+      display: none;
+    }
+ 
+    .flxImage2{
+      display: block;
+      width: 100%;
+    }
+    .saleImage{
+        display: none;
+    }
+    .saleImage2{
+        display: block;
+        width: 100%;
+    }
+   .flxImageTextDiv{
+       display: flex;
+       flex-direction: column;
+       top: 10px;
+       text-align: center;
+       margin-left: 150px;
+       width: 200px;
+       height: 200px;
+       align-items: center;
+       justify-content: center;
+       position: relative;
+       
+   }
+   .saleImageTextDiv{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 10px;
+    text-align: center;
+    margin-right: 146px;
+
+   }
+
+
+   .second-Section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+    text-align: end;
+    
+ }
+ .newArrivalsDiv{
+     
+     display: flex;
+     flex-direction: column;
+     margin-top: 20px;
+ }
+
+ }

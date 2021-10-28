@@ -5,6 +5,7 @@ import Product from "./Product";
 import Header from "./Header";
 import Cart from "./Cart";
 import {useState} from "react"
+import { useSelector } from "react-redux";
 
 
 
@@ -12,6 +13,8 @@ import {useState} from "react"
 
 
 function App() {
+  const cartAddedItems = useSelector((state)=>state.ShoeData.cartInfo)
+  console.log(cartAddedItems)
   const signup = true;
   return (
     <Router>
@@ -33,7 +36,11 @@ function App() {
             <Product  />
           </Route>
           <Route path="/cart">
-            <Cart  />
+            {/* {cartAddedItems.map((shoes)=>(
+              <Cart shoes = {shoes}  />
+            )
+            )}
+             */}
           </Route>
 
         
