@@ -1,30 +1,28 @@
-import React from 'react'
-import { useSelector } from 'react-redux'
-import { useDispatch } from 'react-redux'
+import React from "react";
+import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import CartItem from "./CartItem";
+import { DELETE_FROM_CART } from "./redux/action-types/getShoeData";
 
 export default function Cart(props) {
-    const {shoes} = props
+  const cartData = useSelector((state) => state.CartInfo.Cart);
+  console.log();
+  const dispatch = useDispatch();
+  const { shoes } = props;
+  console.log("shoe title", cartData);
 
-
-    return (
+  return (
+    <div className="cartContainer">
+      <div>
         <div>
-            
-
-        
-        <div>
-            <div>
-                <h1>Your Cart</h1>
-            </div>
-            
-         <h1>{shoes.id}</h1> 
-        <h1>{shoes.name}</h1>
-        <img src={shoes.image} alt="" />
-        <button>Remove From Cart</button>
-         </div>
-        
+          <h1 className="productHeadText">Your Cart</h1>
         </div>
-        
-        
-
-    )
+        {cartData.map((shoes) => (
+          <CartItem shoes={shoes} />
+        ))}
+      </div>
+     
+    </div>
+    
+  )
 }

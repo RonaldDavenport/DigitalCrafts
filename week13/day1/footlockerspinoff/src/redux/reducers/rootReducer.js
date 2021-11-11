@@ -2,6 +2,7 @@ import { combineReducers } from "redux";
 import { persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 import ShoeData from "./ShoeData"
+import CartInfo from "./cartReducer";
 
 
 
@@ -15,6 +16,7 @@ const persistConfig = {
 
 const rootReducer = combineReducers({
     ShoeData,
+    CartInfo
     
 })
 

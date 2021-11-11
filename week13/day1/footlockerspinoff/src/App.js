@@ -13,7 +13,7 @@ import { useSelector } from "react-redux";
 
 
 function App() {
-  const cartAddedItems = useSelector((state)=>state.ShoeData.cartInfo)
+  const cartAddedItems = useSelector((state)=>state.CartInfo.Cart)
   console.log(cartAddedItems)
   const signup = true;
   return (
@@ -36,11 +36,11 @@ function App() {
             <Product  />
           </Route>
           <Route path="/cart">
-            {/* {cartAddedItems.map((shoes)=>(
-              <Cart shoes = {shoes}  />
+             
+              <Cart shoes/>
+            
             )
-            )}
-             */}
+             
           </Route>
 
         

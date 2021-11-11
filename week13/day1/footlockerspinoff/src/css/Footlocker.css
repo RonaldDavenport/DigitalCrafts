@@ -1,8 +1,21 @@
 body{
     margin: 0%;
+    
+}
+.salesContainer{
+    /* display: flex;
+    justify-content: end; */
+    /* flex-wrap: wrap; */
+    
+    position: relative;
+
+    text-align: left;
+    width: 100%;
+   /* border: solid black 1px; */
 }
 .navigationBar{
     display: flex;
+    /* border: white; */
     flex-direction: row;
     height: 75px;
     width: 100%;
@@ -11,8 +24,26 @@ body{
  justify-content: space-between;
   
 }
+.homePageBoldText{
+    font-size: 47px;
+    font-family: Black 900 italic, sans-serif;
+    /* height: 110px; */
+    width: 500px;
+   color: bold;
+   /* margin-bottom: 10px; */
+}
+
+.homePagePText{
+    font-size: large;
+    font-family: 'Roboto Slab', serif;
+    color: black;
+}
+.newArrivalsBoldText{
+    font-family: 'Signika Negative', Bold 700, sans-serif;
+    font-size: large;
 
 
+}
 .navbarLogo{
     width: 85px;
     height: 55px;
@@ -33,8 +64,10 @@ body{
     height: 5px; */
 }
 .flxImage{
+    /* margin-top: 30px; */
     width: 100%;
-    height: 250px;
+    height: 260px;
+    margin-bottom: 20px;
 }
 .flxImage2{
     display: none;
@@ -45,6 +78,7 @@ body{
    margin-top: 20px;
     width: 100%;
     height: 300px;
+    margin-bottom: 20px;
 
 }
 .saleImage2{
@@ -52,20 +86,35 @@ body{
     
 }
 .flxImageTextDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+    text-align: left;
  position: absolute;
  top: 100px;
- height: 100px;
+ height: 200px;
 margin-left: 10px;  
+margin-top: 50px;
 }
 .second-Section{
    display: flex;
    justify-content: end;
 }
 .saleImageTextDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
     position: absolute;
- top: 300px;
- height: 100px;
- text-align: left;
+  
+    top: 60px;
+    margin-right: 50px;
+    /* left: 10px; */
+    /* r: 20px; */
+
+    
+ 
 /* margin-left: 600px;   */
     /* margin-right: ; */
 }
@@ -83,13 +132,33 @@ li{
     /* flex-direction: row; */
 
 }
+.cartContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    
+}
+.cartDivs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 1px solid lightgray;
+    width: 500px;
+    padding: 5px;
+
+    
+}
+
 .homePageShoeImages{
     height: 100px;
     width: 150px;
 }
 .productMainContainer{
     align-items: center;
-    text-align: center;
+    text-align: left;
+
 }
 .productContainer{
     display: grid;
@@ -99,24 +168,77 @@ li{
     justify-content: center;
     /* align-items: center; */
     text-align: center;
+    padding: 50px;
     gap: 20px;
     
     
 }
+.secondRow{
+    border: solid 10px red;
+}
 .productShoeDivs{
  display: flex;
 flex-direction: column;
-border: 1px solid black;
-width: 225px;
+border: 1px solid lightgray;
+width: 300px;
+height: 400px;
+/* height: 250px; */
 font-size: 10px;
 justify-content: center;
 align-items: center;
+font-size: medium;
+/* border-bottom: 3px solid black; */
+background-color: white;
+
+
+
+/* position: absolute; */
+/* box-shadow: 0px  -3px px red inset;  */
 
 
 }
+.productShoeDivs:hover{
+  border: 1px solid black;
+}
+.productShoeDivRow2{
+    display: flex;
+    flex-direction: column;
+   height: 150px;
+    width: 100%;
+   border-top: 1px solid lightgray;
+    justify-content: left;
+    align-items: start;
+    flex-wrap: wrap;
+    background-color: lightgray;
+    margin-top: 70px;
+    /* margin-top: 125px; */
+    text-align: left;
+   padding: 5px;
+   text-size-adjust: none;
+    
+
+}
+.productShoeDivRow1{
+    display: flex;
+    /* height: px; */
+
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    margin-top: 45px;
+    height: 200px;
+
+}
+.productText{
+    font-size: small;
+}
+.productHeadText{
+    font-size: xx-large;
+    font-family: 'IBM Plex Sans Hebrew', sans-serif
+}
 .productPageImages{
-    width: 200px;
-    height: 150px;
+    width: 175px;
+    height: 123px;
 }
 @media only screen and (max-width: 650px){
     body{
@@ -153,7 +275,7 @@ margin: 0%;
        flex-direction: column;
        top: 10px;
        text-align: center;
-       margin-left: 150px;
+       margin-left: 200px;
        width: 200px;
        height: 200px;
        align-items: center;
@@ -171,7 +293,10 @@ margin: 0%;
     position: relative;
     top: 10px;
     text-align: center;
-    margin-right: 146px;
+    margin-top: 20px;
+    margin-right: 200px;
+    padding: 20px;
+    margin-bottom: 100px;
 
    }
 
@@ -191,5 +316,24 @@ margin: 0%;
      flex-direction: column;
      margin-top: 20px;
  }
+ .homePageBoldText{
+     font-size: 22px;
+ }
+ .cartDivs{
+    display: flex;
+    flex-direction: column;
+ }
+ .productShoeDivs{
+display: flex;
+flex-direction: column;
+ }
+ .productContainer{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     height: fit-content;
+ }
+
 
  }

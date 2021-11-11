@@ -1,18 +1,18 @@
 import { ADD_TO_CART } from "../action-types/getShoeData";
 import { DELETE_FROM_CART } from "../action-types/getShoeData";
 
-export const addToCart=(shoeID,name,image,retailPrice)=>{
+export const addToCart=(id,image,brand,name,retailPrice)=>{
     return{
         type:ADD_TO_CART,
-        payload: shoeID
+        payload: id,image,brand,name,retailPrice
     }
 }
 
-export const removeFromCart = (name)=>{
+export const removeFromCart = (id)=>{
     return{
         type: DELETE_FROM_CART, 
         
-        payload: name
+        payload: id
         
         
     }
