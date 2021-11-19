@@ -4,7 +4,9 @@ import { createClient } from "@supabase/supabase-js";
 import { useHistory } from "react-router";
 import { useDispatch } from "react-redux";
 import { getUsername, grabUsername } from "../redux/actions/shoppingCart-action";
+import FootlockerLogo from "../assets/FootlockerLogo.png";
 import { useEffect } from "react";
+
 
 import "../css/Login.css";
 import { GET_USERNAME, GRAB_USERNAME } from "../redux/action-types/getShoeData";
@@ -70,7 +72,7 @@ export default function Login(props) {
     <div className="mainLoginDiv">
       <img
         className="loginLogo"
-        src="http://assets.stickpng.com/images/5a1ac7f9f65d84088faf136a.png"
+        src={FootlockerLogo}
         alt=""
       />
 
