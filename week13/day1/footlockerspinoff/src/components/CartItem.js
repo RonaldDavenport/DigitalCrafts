@@ -1,6 +1,7 @@
 import React from 'react'
-import { DELETE_FROM_CART } from './redux/action-types/getShoeData'
+import { DELETE_FROM_CART } from '../redux/action-types/getShoeData'
 import { useDispatch } from 'react-redux'
+import "../css/Cart.css"
 let USD = (new Intl.NumberFormat("en-US", {style:"currency", currency:"USD"}))
 
 export default function CartItem(props) {
@@ -8,6 +9,7 @@ export default function CartItem(props) {
     console.log("this is props",props.shoes)
    const shoes = props.shoes
     return (
+        
         <div className="cartDivs">
             <div className="cartDivColumn1">
         <h1 className="productText">{shoes.name}</h1>
@@ -23,5 +25,6 @@ export default function CartItem(props) {
 
          </div>
         </div>
+        
     )
 }

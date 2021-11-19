@@ -1,54 +1,55 @@
-import Home from "./Home";
+import Home from "./components/Home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Login from "./Login";
-import Product from "./Product";
-import Header from "./Header";
-import Cart from "./Cart";
-import {useState} from "react"
+import Login from "./components/Login";
+import Product from "./components/Product";
+import Header from "./components/Header";
+import Cart from "./components/Cart";
+import { useState } from "react";
 import { useSelector } from "react-redux";
 
-
-
-
-
-
 function App() {
-  const cartAddedItems = useSelector((state)=>state.CartInfo.Cart)
-  console.log(cartAddedItems)
-  const signup = true;
+  const [loggedIn, setLoggedIn] = useState(false);
+  const hi = 15;
+  const name = useSelector((state) => state.getUsername.username);
+  console.log(name)
+  const cartAddedItems = useSelector((state) => state.CartInfo.Cart);
+  const user = JSON.parse(localStorage.getItem("supabase.auth.token"));
+  // console.log(user.currentSession.user.email);
+  // const username = (user.currentSession.user.email)
+  console.log(cartAddedItems);
+  const signUp = true;
   return (
     <Router>
       <Switch>
-        <>
-        <Route path="/signup">
-          <Login signup={signup} />
-        </Route>
-        <Route path="/login">
-          <Login />
-        </Route>
-        <div className="App">
-          <Header/>
+      
+        {user ? (
+          <>
+          <Header name={name} signUp={signUp}  />
+            <Route  exact path="/signup">
+              <Login signUp={signUp} />
+              
+            </Route>
 
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/product">
-            <Product  />
-          </Route>
-          <Route path="/cart">
-             
-              <Cart shoes/>
+            <div className="App">
             
-            )
-             
+              <Route exact path="/home">
+                <Home />
+              </Route>
+              <Route path="/product">
+                <Product/>
+              </Route>
+              <Route path="/cart">
+                <Cart shoes />
+              </Route>
+            </div>
+          </>
+        ) : (
+          <Route path="/">
+            <div className="loginDiv">
+            <Login  />
+            </div>
           </Route>
-
-        
-          
-          
-      </div>
-      </>
-     
+        )}
       </Switch>
     </Router>
   );

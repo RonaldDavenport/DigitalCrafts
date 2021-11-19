@@ -3,20 +3,23 @@ import { persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 import ShoeData from "./ShoeData"
 import CartInfo from "./cartReducer";
+import { getUsername } from "./loginReducer";
 
 
 
 const persistConfig = {
     key: 'root',
     storage,
-    whitelist:["ShoeData"]
+    whitelist:["ShoeData","getUsername"]
 }
 
 
 
 const rootReducer = combineReducers({
     ShoeData,
-    CartInfo
+    CartInfo,
+    getUsername
+
     
 })
 
