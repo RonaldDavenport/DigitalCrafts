@@ -27,8 +27,9 @@ const newtask= await todolists.create({
     task: task
   
 })
+console.log(newtask)
 // res.render("index",{locals: {newtask:newtask}});
-res.send(newtask)
+// res.send(newtask)
 
 })
 

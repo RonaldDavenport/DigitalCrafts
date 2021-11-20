@@ -34,9 +34,11 @@ while user1_input != "q":
         print("Start your list\n\n")
         storename = input("Enter store name")
         store = shoppingList(storename)
+        store_index = len(list_stores)+1
         print("\n List has been created:\n" )
         list_stores.append(store)
         all_list.append(list_stores)
+        
        
         
     if user1_input == "2":

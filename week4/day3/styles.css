@@ -1,0 +1,46 @@
+body{
+    background-color: blanchedalmond;
+}
+
+h1 {
+    color: aqua;
+}
+li{
+    color: aqua;
+}
+.flex{
+    display: flex;
+    background-color: blueviolet;
+}
+.element{
+    /* background-color: aqua; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.element1{
+    display: flex;
+
+    background-color: beige;
+flex-wrap: wrap;
+    flex-direction: column;
+    
+    height: 65px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    height: 5px;
+}
